@@ -7,6 +7,7 @@ const App = () => {
   return (
     <div className="App">
       <Navbar />
+      <p>testowy pr</p>
       <div className="main">{/* Define all the routes */}</div>
     </div>
   );
