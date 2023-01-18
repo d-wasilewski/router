@@ -4,41 +4,18 @@ import "../App.css";
 
 const Navbar = () => {
   let activeClassName = "active";
-  const [first, setfirst] = useState(0);
-  setfirst(2);
 
   return (
     <nav>
       <ul>
         <li>
-          <NavLink
-            to="/"
-            className={({ isActive }) =>
-              isActive ? activeClassName : undefined
-            }
-          >
-            Home
-          </NavLink>
+          <a href="/">Home</a>
         </li>
         <li>
-          <NavLink
-            to="users"
-            className={({ isActive }) =>
-              isActive ? activeClassName : undefined
-            }
-          >
-            Dashboard
-          </NavLink>
+          <a href="users">Users</a>
         </li>
         <li>
-          <NavLink
-            to="about"
-            className={({ isActive }) =>
-              isActive ? activeClassName : undefined
-            }
-          >
-            About
-          </NavLink>
+          <a href="/about">About</a>
         </li>
       </ul>
     </nav>
