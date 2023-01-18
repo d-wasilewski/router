@@ -9,6 +9,7 @@ const App = () => {
       <Navbar />
       <div>hello</div>
       <div className="main">{/* Define all the routes */}</div>
+      <div>changesssss</div>
     </div>
   );
 };
