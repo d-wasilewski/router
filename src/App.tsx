@@ -7,14 +7,13 @@ const App = () => {
   return (
     <div className="App">
       <Navbar />
-      <div>hello</div>
       <div className="main">{/* Define all the routes */}</div>
     </div>
   );
 };
 
 export const Home = () => {
-  return <div>You are in Home page, hello</div>;
+  return <div>You are in Home page, hello!!!!</div>;
 };
 export const About = () => {
   return <div>This is the page where you put details about yourself</div>;
