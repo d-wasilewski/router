@@ -7,8 +7,16 @@ const App = () => {
   return (
     <div className="App">
       <Navbar />
-      <div className="main">{/* Define all the routes */}</div>
-      <div>changes</div>
+      <div className="main">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/users" element={<Users />}>
+            <Route path=":userId" element={<User />} />
+          </Route>
+          <Route path="/about" element={<About />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </div>
     </div>
   );
 };

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "../App.css";
 
 const Navbar = () => {
@@ -9,13 +9,34 @@ const Navbar = () => {
     <nav>
       <ul>
         <li>
-          <a href="/">Home</a>
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? activeClassName : undefined
+            }
+            to="/"
+          >
+            Home
+          </NavLink>
         </li>
         <li>
-          <a href="users">Users</a>
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? activeClassName : undefined
+            }
+            to="/users"
+          >
+            Users
+          </NavLink>
         </li>
         <li>
-          <a href="/about">About</a>
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? activeClassName : undefined
+            }
+            to="/about"
+          >
+            About
+          </NavLink>
         </li>
       </ul>
     </nav>
